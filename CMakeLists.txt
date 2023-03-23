@@ -33,4 +33,4 @@ add_executable(test_integration test_integration.cxx)
 add_executable(test_average test_average.cxx)
 target_link_libraries(test_average xtensor)
 
-add_executable(test_average_fortran test_average_fortran.F90)
+add_executable(test_average_fortran test_average_fortran.F90 vector_average_fortran.F90)
