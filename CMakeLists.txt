@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.16)
 
-project(OpenMP)
+project(OpenMP LANGUAGES CXX Fortran)
 
 include(cmake/CPM.cmake)
 
@@ -32,3 +32,5 @@ add_executable(test_integration test_integration.cxx)
 
 add_executable(test_average test_average.cxx)
 target_link_libraries(test_average xtensor)
+
+add_executable(test_average_fortran test_average_fortran.F90)
